@@ -20,7 +20,7 @@ renderer.render( scene, camera);
 //Torus
 
 const geometry = new THREE.TorusGeometry( 25, 3, 16, 1000 );
-const stationTexture = new THREE.TextureLoader().load('stationTexture.PNG')
+const stationTexture = new THREE.TextureLoader().load('./images/stationTexture.PNG')
 const material = new THREE.MeshBasicMaterial( { map: stationTexture} );
 
 const torus = new THREE.Mesh( geometry, material );
@@ -58,13 +58,13 @@ Array(200).fill().forEach(addStar)
 
 //Background photo
 
-const spaceTexture = new THREE.TextureLoader().load('space.PNG');
+const spaceTexture = new THREE.TextureLoader().load('./images/space.PNG');
 scene.background = spaceTexture;
 
 
 //Avatar
 
-const joonasTexture = new THREE.TextureLoader().load('mina.PNG')
+const joonasTexture = new THREE.TextureLoader().load('./images/mina.PNG')
 
 const joonas = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -75,7 +75,7 @@ scene.add(joonas)
 
 //Planet
 
-const planetQTexture = new THREE.TextureLoader().load('questions.PNG');
+const planetQTexture = new THREE.TextureLoader().load('./images/questions.PNG');
 
 const planetQ = new THREE.Mesh(
   new THREE.SphereGeometry(5, 22, 32),
