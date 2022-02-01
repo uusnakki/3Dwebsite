@@ -81,3 +81,12 @@ canvas {
     grid-column: 6 / 12;
   }
 
+a {
+  background:#5728c5;
+  color:#ffffff;
+  width: 30%;
+  font-size:17px;
+  padding:2px 12px;
+  border-radius:3px;
+  display: block; /* Added */
+}
